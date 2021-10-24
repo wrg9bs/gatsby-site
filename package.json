@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio-website",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Gatsby simplefolio website",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -23,7 +23,8 @@
     "gatsby-plugin-sass": "^2.3.4",
     "gatsby-plugin-sharp": "^2.6.12",
     "gatsby-source-filesystem": "^2.3.12",
-    "gatsby-transformer-sharp": "^2.5.5",
+    "gatsby-transformer-sharp": "^4.0.0",
+    "ityped": "^1.0.3",
     "nanoid": "^3.1.10",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
@@ -32,9 +33,11 @@
     "react-dom": "^16.13.1",
     "react-github-btn": "^1.2.0",
     "react-helmet": "^6.1.0",
+    "react-particles-js": "^3.5.3",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.16",
-    "react-tilt": "^0.1.4"
+    "react-tilt": "^0.1.4",
+    "tsparticles": "^1.36.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

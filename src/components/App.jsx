@@ -4,8 +4,10 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-
+import Navbar from './Navbar/Navbar';
+import Menu from './Menu/Menu';
 import { PortfolioProvider } from '../context/context';
+import Particles from './particlesjs/Particles';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
@@ -15,6 +17,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setHero({ ...heroData });
@@ -26,6 +29,9 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Particles />
       <Hero />
       <About />
       <Projects />
